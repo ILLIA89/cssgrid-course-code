@@ -4,4 +4,23 @@
 
 .container {
   display: grid;
+  grid-template-columns: repeat(4, 150px);
+  grid-template-rows: repeat(3, 150px);
+  height: 500px;
+  border: 10px solid black;
+
+  /* !впливають на розташування елементу в середині рядка або колонки (застосовується для всіх елементів сітки)*/
+  /* ?justify-items: center;
+  ?align-items: center; */
+
+  /* !впливає на розміщення всіх рядків або колонок в контейнері*/
+  /* !щоб ці властивості запрацювали в контейнері має бути  вільний простір який не використовується грідом*/
+  /* ?justify-content: space-evenly; */
+  /* ?align-content: space-evenly; */
+}
+
+.item-4 {
+  /* !точково редагує один елемент сітки (редагування алементу нп: центрування svg іконки...)*/
+  justify-self: center;
+  align-self: center;
 }
